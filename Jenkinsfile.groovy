@@ -10,14 +10,12 @@ node {
     stage "Setenv"
     // build parameters
    parameterDefinitions  : [
-              [name         : 'APP',                          
-               $class       : 'StringParameterDefinition'],
+              [name         : 'APP'],
               [name         : 'ENVIRONMENT',
-               defaultValue : 'staging',
-               description  : 'Which environment to deploy in (prod / staging)',
+               defaultValue : 'staging'
+              
                $class       : 'StringParameterDefinition'],
-              [name         : 'PACKER',              
-               $class       : 'StringParameterDefinition']
+              [name         : 'PACKER']
       ]
     
     
