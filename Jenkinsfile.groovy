@@ -17,7 +17,7 @@ node {
     
     
     env.APP = APP
-    //env.ENVIRONMENT = ENVIRONMENT
+    env.ENVIRONMENT = ENVIRONMENT
     env.PACKER = PACKER
     
     echo env.APP
