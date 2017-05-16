@@ -9,18 +9,20 @@ node {
     // Set environment variables
     stage "Setenv"
     // build parameters
-    properties properties: [[
-      $class                : 'ParametersDefinitionProperty',
-      parameterDefinitions  : [
-              [name         : 'APP',               
+   parameterDefinitions  : [
+              [name         : 'APP',
+               defaultValue : 'amsws',
+               description  : 'Which app to deploy (amsws / amsadm / amsroams)',
                $class       : 'StringParameterDefinition'],
               [name         : 'ENVIRONMENT',
-               defaultValue : 'staging',               
+               defaultValue : 'staging',
+               description  : 'Which environment to deploy in (prod / staging)',
                $class       : 'StringParameterDefinition'],
-              [name         : 'PACKER',              
+              [name         : 'PACKER',
+               defaultValue : 'no',
+               description  : 'Run Packer or not? (yes / no)',
                $class       : 'StringParameterDefinition']
       ]
-    ]]
     
     
     env.APP = APP
