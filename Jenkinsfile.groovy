@@ -11,10 +11,7 @@ node {
     // build parameters
    parameterDefinitions  : [
               [name         : 'APP'],
-              [name         : 'ENVIRONMENT',
-               defaultValue : 'staging'
-              
-               $class       : 'StringParameterDefinition'],
+              [name         : 'ENVIRONMENT'],
               [name         : 'PACKER']
       ]
     
