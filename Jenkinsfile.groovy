@@ -9,15 +9,13 @@ node {
     // Set environment variables
     stage "Setenv"
     // build parameters
-   parameterDefinitions  : [
-              [name         : 'APP'],
-              [name         : 'ENVIRONMENT'],
-              [name         : 'PACKER']
-      ]
+   //parameterDefinitions  : [
+   //           [name         : 'APP']
+   //           [name         : 'PACKER']
+   //   ]
     
     
     env.APP = APP
-    env.ENVIRONMENT = ENVIRONMENT
     env.PACKER = PACKER
     
     echo env.APP
