@@ -1,4 +1,4 @@
-node ('test') {
+node ('lli-node') {
  
     // Mark the code checkout 'Checkout'....
     stage 'Checkout'
