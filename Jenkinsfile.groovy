@@ -4,7 +4,7 @@ node ('test') {
     stage 'Checkout'
  
     // // Get some code from a GitHub repository
-    checkout scm
+    //checkout scm
 
     // Set environment variables
     stage "Setenv"
